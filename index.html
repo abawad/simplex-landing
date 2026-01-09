@@ -16,10 +16,10 @@ body {
 /* HERO WITH BACKGROUND IMAGE */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url('stock.jpg') center/cover no-repeat;
+                url('stock1.jpg') center/cover no-repeat;
     color: #fff;
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 .hero h1 {
@@ -58,7 +58,7 @@ body {
 
 .section {
     background: #fff;
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 30px;
     border-radius: 6px;
 }
@@ -73,6 +73,20 @@ body {
     max-width: 800px;
     height: 450px;
     border-radius: 8px;
+}
+
+/* STOCK GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 ul {
@@ -126,7 +140,7 @@ ul li::before {
     <strong>Limited Stock Clearance Offer – 30 Days Only</strong></p>
 
     <a href="tel:+966581317140" class="btn call">Call Now</a>
-    <a href="https://wa.me/966501234567?text=Hello%20I%20need%20Simplex%20Fire%20Alarm%20ready%20stock" class="btn whatsapp">WhatsApp Now</a>
+    <a href="https://wa.me/966581317140?text=Hello%20I%20need%20Simplex%20Fire%20Alarm%20ready%20stock" class="btn whatsapp">WhatsApp Now</a>
 
     <p style="margin-top:10px;">📞 +966 581317140</p>
 </div>
@@ -138,6 +152,16 @@ ul li::before {
 <h2>Actual Available Stock</h2>
 <iframe src="https://www.youtube.com/embed/mJn3ragb_JE" allowfullscreen></iframe>
 <p>Original Simplex Fire Alarm systems – panels, devices & accessories – ready for immediate delivery.</p>
+</div>
+
+<!-- IMAGES -->
+<div class="section">
+<h2>Available Simplex Stock</h2>
+<div class="gallery">
+<img src="stock1.jpg" alt="Simplex Fire Alarm Stock">
+<img src="stock2.jpg" alt="Simplex Fire Alarm Devices">
+<img src="stock3.jpg" alt="Simplex Fire Alarm Panels">
+</div>
 </div>
 
 <!-- WHY -->
@@ -171,4 +195,5 @@ Saudi Arabia
 
 </body>
 </html>
+
 
