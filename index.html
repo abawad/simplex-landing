@@ -9,22 +9,30 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
+    background: #eee;
     color: #222;
 }
 
-/* HERO WITH BACKGROUND IMAGE */
+/* HERO – SIMPLEX RED STYLE */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url('stock1.jpg') center/cover no-repeat;
+    background:
+        linear-gradient(
+            135deg,
+            #8b0000 0%,
+            #b30000 45%,
+            #d32f2f 100%
+        ),
+        url('stock1.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
     color: #fff;
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
     font-size: 38px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .hero p {
@@ -41,7 +49,7 @@ body {
 }
 
 .btn.call {
-    background: #000;
+    background: #111;
     color: #fff;
 }
 
@@ -50,6 +58,12 @@ body {
     color: #fff;
 }
 
+.btn.email {
+    background: #ffffff;
+    color: #b30000;
+}
+
+/* CONTENT */
 .container {
     max-width: 1100px;
     margin: auto;
@@ -68,6 +82,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* VIDEO */
 .video iframe {
     width: 100%;
     max-width: 800px;
@@ -75,7 +90,7 @@ body {
     border-radius: 8px;
 }
 
-/* STOCK GALLERY */
+/* GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -85,10 +100,11 @@ body {
 
 .gallery img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
+/* LIST */
 ul {
     list-style: none;
     padding: 0;
@@ -107,11 +123,13 @@ ul li::before {
     left: 0;
 }
 
+/* URGENCY */
 .urgency {
     background: #fff2f2;
     border: 2px dashed #b30000;
 }
 
+/* FOOTER */
 .footer {
     text-align: center;
     padding: 20px;
@@ -134,15 +152,21 @@ ul li::before {
 
 <!-- HERO -->
 <div class="hero">
-    <h1>Simplex Fire Alarm Systems – Ready Stock</h1>
+    <h1>Simplex Fire Alarm Systems – Large Stock Available Now</h1>
     <p><strong>For MEP Contractors | FM Companies | Industrial Projects</strong></p>
     <p>Immediate Delivery Across Saudi Arabia<br>
-    <strong>Limited Stock Clearance Offer – 30 Days Only</strong></p>
+    <strong>Limited Stock Clearance – Act Now</strong></p>
 
     <a href="tel:+966581317140" class="btn call">Call Now</a>
-    <a href="https://wa.me/966581317140?text=Hello%20I%20need%20Simplex%20Fire%20Alarm%20ready%20stock" class="btn whatsapp">WhatsApp Now</a>
+
+    <a href="https://wa.me/966581317140?text=Hello%20I%20need%20Simplex%20Fire%20Alarm%20ready%20stock"
+       class="btn whatsapp">WhatsApp Now</a>
+
+    <a href="mailto:sales.fire1@fajergroup.com?subject=Simplex%20Fire%20Alarm%20Ready%20Stock"
+       class="btn email">Send Email</a>
 
     <p style="margin-top:10px;">📞 +966 581317140</p>
+    <p>📧 <strong>sales.fire1@fajergroup.com</strong></p>
 </div>
 
 <div class="container">
@@ -171,7 +195,7 @@ ul li::before {
 <li>Original Simplex Fire Alarm Systems</li>
 <li>Immediate Delivery – No Waiting Time</li>
 <li>Special Stock Clearance Pricing</li>
-<li>Suitable for Projects & Maintenance</li>
+<li>Ideal for Projects & Maintenance</li>
 <li>Limited Quantities Available</li>
 </ul>
 </div>
@@ -181,7 +205,7 @@ ul li::before {
 <h2>⚠ Important Notice</h2>
 <p>
 This is a <strong>limited stock clearance offer</strong>.<br>
-Quantities allocated to limited projects only.<br><br>
+Quantities allocated to selected projects only.<br><br>
 <strong>Stock reservation available for 7 days.</strong>
 </p>
 </div>
