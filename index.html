@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simplex Fire Alarm System | Ready Stock KSA</title>
     <style>
         :root {
-            --primary-red: #e31e24; /* لون سيمبلكس الأصلي */
+            --simplex-red: #e31e24; 
             --dark-red: #b3191d;
             --gold: #ffcc00;
-            --white: #ffffff;
-            --light-grey: #f2f2f2;
+            --light-bg: #f9f9f9;
         }
 
         body {
@@ -18,220 +17,204 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #ffffff;
             color: #333;
+            line-height: 1.6;
         }
 
-        /* الهيدر - أحمر قوي صريح */
+        /* Header */
         .hero {
-            background: var(--primary-red);
+            background: var(--simplex-red);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
             border-bottom: 8px solid var(--gold);
         }
 
-        .hero h1 { font-size: 2.5rem; margin: 10px 0; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-        .hero .shipping {
+        .hero h1 { font-size: 2.2rem; margin: 0; font-weight: 900; }
+        .shipping {
             background: var(--gold);
             color: #000;
-            padding: 10px 25px;
-            font-weight: 900;
-            border-radius: 50px;
+            padding: 8px 20px;
+            font-weight: bold;
+            border-radius: 5px;
             display: inline-block;
             margin-top: 15px;
-            font-size: 1.1rem;
         }
 
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
 
         .section {
             background: #fff;
             margin-bottom: 30px;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
-        /* الفيديو المتجاوب */
-        .video-box {
+        /* Video Fix for Mobile */
+        .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            border-radius: 15px;
-            border: 3px solid var(--primary-red);
+            border-radius: 12px;
+            border: 3px solid var(--simplex-red);
+            background: #000;
         }
-        .video-box iframe {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
-        }
-
-        /* قسم لماذا تختارنا - خط كبير وخلفية متناسقة */
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            background: var(--light-yellow); /* خلفية صفراء فاتحة متناسقة */
-            border-radius: 20px;
-            padding: 40px;
-            border: 2px solid #ddd;
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
-        .features-grid h3 { font-size: 1.8rem; margin-bottom: 20px; }
-        .features-grid ul { padding: 0; list-style: none; }
-        .features-grid ul li { 
-            font-size: 1.3rem; /* تكبير الخط */
-            font-weight: 600;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* معرض الصور الحقيقية */
+        /* Gallery */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
         }
         .gallery img {
             width: 100%;
-            height: 280px;
+            height: 250px;
             object-fit: cover;
-            border-radius: 12px;
-            border: 4px solid var(--light-grey);
-            transition: 0.4s ease;
+            border-radius: 10px;
+            border: 2px solid #eee;
         }
-        .gallery img:hover { transform: scale(1.03); border-color: var(--primary-red); }
 
-        /* بلوك الكول تو اكشن */
-        .cta-block {
-            background: linear-gradient(135deg, var(--dark-red), var(--primary-red));
+        /* Why Choose Us - Big Font */
+        .features {
+            background: #fffdf2;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid var(--gold);
+            font-size: 1.4rem; /* تكبير الخط بناءً على طلبك */
+        }
+        .features h3 { color: var(--simplex-red); margin-top: 0; }
+        .features ul { list-style: '✅ '; padding-right: 25px; }
+        .features li { margin-bottom: 15px; font-weight: 600; }
+
+        /* Contact Form */
+        .contact-form {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+        }
+        .contact-form h2 { color: var(--simplex-red); text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;
+        }
+        .submit-btn {
+            background: var(--simplex-red);
             color: white;
-            padding: 50px 20px;
-            border-radius: 25px;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* CTA Block */
+        .cta {
+            background: linear-gradient(135deg, var(--dark-red), var(--simplex-red));
+            color: white;
             text-align: center;
-            box-shadow: 0 15px 35px rgba(227, 30, 36, 0.3);
+            padding: 40px 20px;
+            border-radius: 20px;
+            margin: 30px 0;
         }
+        .cta h2 { font-size: 1.8rem; }
+        .phone-big { font-size: 3rem; color: var(--gold); display: block; margin: 20px 0; text-decoration: none; font-weight: 900; }
 
-        .phone-number {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: var(--gold);
-            display: block;
-            margin: 20px 0;
-            text-decoration: none;
-        }
-
-        .btn-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .btn { padding: 20px 45px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.3rem; transition: 0.3s; }
-        .btn-call { background: white; color: var(--primary-red); }
-        .btn-wa { background: #25d366; color: white; }
-
-        /* الفوتر - أحمر قوي صريح */
+        /* Footer */
         .footer {
-            background: var(--primary-red);
+            background: var(--simplex-red);
             color: white;
-            padding: 60px 20px;
             text-align: center;
+            padding: 50px 20px;
         }
-
-        .footer-email {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: var(--gold);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .footer-phone {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: white;
-            text-decoration: none;
-            display: block;
-        }
+        .footer a { color: var(--gold); text-decoration: none; font-weight: 900; font-size: 1.5rem; }
 
         @media (max-width: 768px) {
-            .features-grid { grid-template-columns: 1fr; padding: 20px; }
-            .phone-number { font-size: 2.2rem; }
-            .hero h1 { font-size: 1.8rem; }
+            .phone-big { font-size: 2rem; }
+            .features { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
 
     <header class="hero">
-        <h1>نظام إنذار حريق سيمبلكس | Simplex Fire Alarm System</h1>
-        <div class="shipping">🚚 شحن مجاني للرياض والدمام | Free Shipping</div>
+        <h1>Simplex Fire Alarm KSA</h1>
+        <div class="shipping">🚚 شحن فوري لجميع مناطق المملكة</div>
     </header>
 
     <div class="container">
+        
+        <div class="section">
+            <h2 style="text-align:center; color: var(--simplex-red);">مخزون سيمبلكس الحقيقي</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/mJn3ragb_JE?playsinline=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
 
-       <div class="section">
-    <h2 style="text-align:center; color: var(--primary-red); font-size: 1.8rem;">معاينة المخزون بالفيديو | Video Preview</h2>
-    <div class="video-box" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 15px;">
-        <iframe 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-            src="https://www.youtube.com/embed/mJn3ragb_JE?rel=0&modestbranding=1&playsinline=1" 
-            title="Simplex Stock" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
-</div>
-
-       <div class="section">
-            <h2 style="text-align:center; color: var(--primary-red); font-size: 1.8rem; margin-bottom: 25px;">صور المستودع الحقيقية | Real Stock Images</h2>
+        <div class="section">
+            <h2 style="text-align:center; color: var(--simplex-red);">معرض الصور الحية</h2>
             <div class="gallery">
-               <img src="stock5.jpeg" alt="Simplex Stock 5">
-                <img src="stock2 (2).jpeg" alt="Simplex Stock 2">
-                <img src="stock3 (2).jpeg" alt="Simplex Stock 3">
-                <img src="stock4.jpeg" alt="Simplex Stock 4">
-                
+                <img src="stock5.jpeg" alt="Simplex">
+                <img src="stock2 (2).jpeg" alt="Simplex">
+                <img src="stock3 (2).jpeg" alt="Simplex">
+                <img src="stock4.jpeg" alt="Simplex">
             </div>
         </div>
 
-        <div class="section features-grid">
-            <div style="direction: rtl; text-align: right;">
-                <h3 style="color:var(--primary-red)">لماذا تختار عرضنا؟</h3>
-                <ul>
-                    <li>✅ مخزون أصلي جاهز للتحميل فوراً.</li>
-                    <li>✅ شهادات المنشأ والضمان متوفرة.</li>
-                    <li>✅ أفضل سعر تصفية في المملكة.</li>
-                    <li>✅ دعم فني كامل لبرمجة اللوحات.</li>
-                </ul>
-            </div>
-            <div style="direction: ltr; text-align: left;">
-                <h3 style="color:var(--primary-red)">Why Choose Us?</h3>
-                <ul>
-                    <li>✅ 100% Real stock ready for pickup.</li>
-                    <li>✅ COO and Warranty certificates included.</li>
-                    <li>✅ Competitive Clearance Pricing.</li>
-                    <li>✅ Full technical support for panels.</li>
-                </ul>
-            </div>
+        <div class="section features">
+            <h3>لماذا تختارنا؟</h3>
+            <ul>
+                <li>مخزون أصلي جاهز للتسليم الآن.</li>
+                <li>أفضل أسعار التصفية في السوق السعودي.</li>
+                <li>دعم فني كامل للمهندسين والمقاولين.</li>
+            </ul>
         </div>
 
-        <div class="cta-block">
-            <h2>اطلب عرض سعر  الآن | Request a Quotation</h2>
-            <a href="tel:+966581317140" class="phone-number">+966 581317140</a>
-            <div class="btn-group">
-                <a href="tel:+966581317140" class="btn btn-call">📞 إتصال مباشر</a>
-                <a href="https://wa.me/966581317140" class="btn btn-wa">💬 واتساب</a>
-            </div>
+        <div class="section contact-form">
+            <h2>طلب عرض سعر سريع</h2>
+            <form action="mailto:salesgrose@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label>الاسم / الشركة</label>
+                    <input type="text" name="Company" required>
+                </div>
+                <div class="form-group">
+                    <label>رقم التواصل</label>
+                    <input type="tel" name="Phone" required>
+                </div>
+                <div class="form-group">
+                    <label>المتطلبات</label>
+                    <textarea name="Order" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
         </div>
 
+        <div class="cta">
+            <h2>للتواصل المباشر والطلب</h2>
+            <a href="tel:+966581317140" class="phone-big">+966 581317140</a>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <a href="https://wa.me/966581317140" style="background:#25d366; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">واتساب</a>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
-        <p style="font-size: 1.2rem; margin-bottom: 10px;">للمراسلات الرسمية والطلبات:</p>
-        <a href="mailto:sales.fire1@fajergroup.com" class="footer-email">salesgrose@gmail.com</a>
-        <a href="tel:+966581317140" class="footer-phone">📞 +966 581317140</a>
-        
-        <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px;">
-            <p style="font-size: 1.1rem; font-weight: bold;">مبيعات أنظمة إنذار الحريق | Fire Alarm Systems Sales</p>
-            <p style="opacity: 0.8; font-size: 0.9rem; margin-top: 10px;">© 2026| المملكة العربية السعودية</p>
-        </div>
+        <p>للمراسلات الرسمية:</p>
+        <a href="mailto:salesgrose@gmail.com">salesgrose@gmail.com</a>
+        <p style="margin-top: 20px;">📞 +966 581317140</p>
+        <p style="opacity: 0.7; font-size: 0.8rem; margin-top: 30px;">© 2026 | توريد أنظمة الحريق بالمملكة</p>
     </footer>
 
 </body>
